@@ -1,0 +1,95 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 2em;
+  background-color: #FDF6E6;
+}
+h1 {
+  color: #DF5446;
+  font-family: 'Bungee Shade', sans-serif;
+  letter-spacing: .1em;
+  text-align: center;
+  font-size: 2.4em;
+  margin: 2%;
+}
+h2 {
+  bottom: 15%;
+  color: #312c2d;
+  font-family: 'Bungee', sans-serif;
+  font-size: 2em;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+.progress {
+  box-sizing: border-box;
+  position: relative;
+  height: 400px;
+  width: 400px;
+  padding: 20px;
+  margin: 40px auto;
+  background: white;
+  background-clip: content-box;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 0px 20px #FCB857, 0px 0px 0px 20px #80D6C0;
+  transition: all 1s ease;
+}
+.bubble {
+  animation: scaleUp 1s infinite;
+}
+@keyframes scaleUp {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+.red {
+  box-shadow: inset 0px 0px 0px 0px transparent, 0px 0px 0px 20px #FF4A4A;
+}
+.progress div {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  background-color: white;
+}
+.quad1 {
+  top: 0%;
+  left: 50%;
+  transform: skew(0deg);
+  transform-origin: left bottom;
+}
+.quad2 {
+  top: 50%;
+  left: 50%;
+  transform-origin: left top;
+}
+.quad3 {
+  top: 50%;
+  left: 0%;
+  transform-origin: right top;
+}
+.quad4 {
+  top: 0%;
+  left: 0%;
+  transform-origin: right bottom;
+}
+textarea {
+  color: #DF5446;
+  position: absolute;
+  border: none;
+  resize: none;
+  outline: none;
+  margin: 30% 5%;
+  width: 80%;
+  text-align: center;
+  font-size: 1em;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+}
